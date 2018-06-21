@@ -2,30 +2,46 @@
     <el-container>
         <el-header>Header</el-header>
         <el-container>
-            <el-aside width="200px">Aside</el-aside>
-            <el-main >Main</el-main>
+
+            <el-aside style="width: 200px;">
+                <Sidebar></Sidebar>
+            </el-aside>
+            
+            
+            <el-main>Main</el-main>
         </el-container>
     </el-container>
 </template>
 
 <script>
-export default {};
+import Sidebar from './components/Sidebar'
+
+export default {
+    components:{
+        Sidebar
+     
+    }
+
+
+};
 </script>
 
+
 <style >
-.el-header,
-.el-footer {
+.el-header{
     background-color: rgb(182, 179, 209);
     color: #333;
-    text-align: center;
+    /* text-align: center; */
     line-height: 60px;
+    padding: 0 0px;
 }
 
 .el-aside {
     background-color: #d3dce6;
     color: #333;
-    text-align: center;
-    line-height: 200px;
+    /* text-align: center; */
+    /* line-height: 200px; */
+
 }
 
 .el-main {
@@ -33,18 +49,9 @@ export default {};
     color: #333;
     text-align: center;
     line-height: 160px;
+   
 }
 
-body > .el-container {
-    margin-bottom: 40px;
-}
 
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-}
 
-.el-container:nth-child(7) .el-aside {
-    line-height: 320px;
-}
 </style>
