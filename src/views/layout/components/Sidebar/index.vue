@@ -5,6 +5,11 @@
             <el-radio-button :label="true">收起</el-radio-button>
         </el-radio-group> -->
         <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+            <el-menu-item index="1"  @click="changeCollapse">
+                <div style=" text-align: center;">
+                <i class="el-icon-menu" ></i>
+                </div>
+            </el-menu-item>
             <el-submenu index="1">
                 <template slot="title">
                     <i class="el-icon-location"></i>
@@ -35,6 +40,9 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">导航四</span>
             </el-menu-item>
+
+
+            
         </el-menu>
     </div>
 </template>
@@ -53,6 +61,9 @@ export default {
         },
         handleClose(key, keyPath) {
             console.log(key, keyPath);
+        },
+        changeCollapse(){
+            this.isCollapse=!this.isCollapse;
         }
     }
 };
