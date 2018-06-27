@@ -19,6 +19,10 @@
                     <span slot="title">分组一</span>
                     <el-menu-item index="1-1">选项1</el-menu-item>
                     <el-menu-item index="1-2">选项2</el-menu-item>
+                    <router-link to="/dashboard" tag="li" role="menuitem" style="padding-left: 40px;" 
+                    class="el-menu-item" >dashboard</router-link>
+                    <router-link to="/userList" tag="li" role="menuitem" style="padding-left: 40px;" 
+                    class="el-menu-item" >userList</router-link>
                 </el-menu-item-group>
                 <el-menu-item-group title="分组2">
                     <el-menu-item index="1-3">选项3</el-menu-item>

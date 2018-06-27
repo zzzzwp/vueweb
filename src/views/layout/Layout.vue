@@ -11,8 +11,7 @@
             </el-aside>
 
             <el-main>
-                <div style="height:auto !important; ">main</div>
-
+                <router-view></router-view>
             </el-main>
         </el-container>
     </el-container>
