@@ -31,7 +31,7 @@ export default {
 </script>
 
 
-<style >
+<style scoped >
 .el-header {
     background-color:#409EFF;
     color: #333;
@@ -53,7 +53,7 @@ export default {
 .el-main {
     background-color: #e9eef3;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
     /* line-height: 160px; */
     height: 100%;
 }
